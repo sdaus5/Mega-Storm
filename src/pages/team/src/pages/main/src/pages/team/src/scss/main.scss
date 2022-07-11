@@ -1,0 +1,29 @@
+@import url('../libs/bootstrap/bootstrap-grid.min.css');
+@import url('../font/jost/stylesheet.css');
+@import url('../libs/owl/owl.carousel.min.css');
+@import url('../libs/owl/owl.theme.default.min.css');
+@import url('../font/jost/jost.css');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.body{
+    background: black;
+    font-family: 'Jost';
+}
+// @mixin name($bg) {
+//     background: $bg
+// }
+// body{
+//     @include name(#333);
+// }
+@import './header.scss';
+@import './rating.scss';
+@import './nft.scss';
+@import './concept.scss';
+@import './function.scss';
+@import './token.scss';
+@import './roadmap.scss';
+@import './team.scss';

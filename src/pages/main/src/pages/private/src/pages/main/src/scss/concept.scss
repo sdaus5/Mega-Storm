@@ -1,0 +1,60 @@
+.concept {
+    background: url("../image/concept/bg.png") center/cover;
+    padding: 160px 0 125px;
+    &__title {
+        font-family: "Jost*";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 43px;
+        line-height: 62px;
+        text-transform: uppercase;
+
+        background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+    &__text {
+        font-family: "Jost*";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+
+        color: #ffffff;
+        margin-bottom: 50px;
+    }
+    &__link {
+        font-family: "Jost*";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22.2603px;
+        line-height: 32px;
+        /* identical to box height */
+
+        color: #774200;
+        text-decoration: none;
+        border: 1px solid black;
+        padding: 16px 50px;
+        margin-right: 45px;
+        border-radius: 5px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover{
+            background: linear-gradient(180deg, #FFA12A 0%, #FEEF6D 100%);
+            border: 1.78082px solid #FFF61B;
+            box-sizing: border-box;
+            border-radius: 7.15189px;
+        }
+    }
+    &__img1 {
+        margin-bottom: 40px;
+        margin-left: 63px;
+    }
+    &__img2{
+        margin-left: 63px;
+    }
+}

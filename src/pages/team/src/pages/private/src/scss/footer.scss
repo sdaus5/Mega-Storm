@@ -1,0 +1,94 @@
+.footer{
+    background: black;
+    padding: 140px 0 75px;
+    &__title {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 43px;
+        line-height: 62px;
+        text-transform: uppercase;
+
+        background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 70px;
+        text-align: center;
+    }
+    &__img {
+        margin-right: 30px;
+        display: flex;
+        justify-content: center;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &-box {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 32px;
+    }
+    &-box2{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 160px;
+    }
+    &-end {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 25px;
+        &__text1 {
+            font-family: "Jost";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #ffffff;
+        }
+        &__text2 {
+            font-family: "Jost";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            /* identical to box height */
+
+            text-align: center;
+
+            color: #ffffff;
+            margin-right: -30px;
+        }
+        &__link {
+            border-radius: 5px;
+            border: 1px black;
+            padding: 14px 12px;
+            text-decoration: none;
+            margin-right: 25px;
+            line-height: 45px;
+            text-align: center;
+            width: 45px;
+            height: 45px;
+            line-height: 45px;
+            background: black;
+            color: white;
+            &:last-child {
+                margin-right: 0px;
+            }
+            &:hover {
+                color: rgb(60, 60, 236);
+            }
+        }
+    }
+    &-colon1{
+        &__text{
+            &:first-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

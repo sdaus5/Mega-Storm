@@ -1,0 +1,48 @@
+.team{
+    position: relative;
+    padding: 100px 0 15px;
+    background: url('../image/team/bg.png') center/cover no-repeat;
+    &__title{
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 43px;
+        line-height: 62px;
+        
+        background: linear-gradient(180deg, #D2D8DE 0%, #FEFFFF 23.96%, #C0C3C6 50.52%, #B6BBBF 79.69%, #ACB2B7 98.44%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 85px;
+        text-align: center;
+        
+    }
+    &-col{
+        &__block{
+            width: 291px;
+            height: 219px;
+            padding: 74px 50px 105px 48px;
+        }
+        &__title{
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 22px;
+            line-height: 32px;
+            
+            color: #FFFFFF;
+            margin-bottom: 5px;
+        }
+        &__text{
+            font-family: 'Jost';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+            /* identical to box height */
+            
+            
+            color: rgba(255, 255, 255, 0.41);
+        }
+    }
+}

@@ -1,0 +1,47 @@
+.meta{
+    background: url('../image/video/bg.png') center/cover;
+    position: relative;
+    padding: 70px 0 140px;
+    &__title{
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 43px;
+        line-height: 62px;
+        text-transform: uppercase;
+        
+        background: linear-gradient(180deg, #D2D8DE 0%, #FEFFFF 23.96%, #C0C3C6 50.52%, #B6BBBF 79.69%, #ACB2B7 98.44%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-align: center;
+        margin-bottom: 21px;
+    }
+    &__subtitle{
+        font-family: 'Jost';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        
+        color: #FFFFFF;
+        margin-bottom: 100px;
+    }
+    &-video{
+        margin-left: 20px;
+        max-width: 1030px;
+        height: 580px;
+        background: url('../image/video/video-img.png') center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__link{
+            text-decoration: none;
+        }
+        &__img1{
+            margin-right: -80px;
+            margin-bottom: -25px;
+        }
+    }
+}

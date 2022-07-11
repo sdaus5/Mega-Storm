@@ -1,0 +1,56 @@
+.nft{
+    background: url('../image/nft/bg.png') center/cover;
+    padding: 140px 0 160px;
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span{
+        background: linear-gradient(180deg, #FFA12A 0%, #FEEF6D 100%), #FEFE40;
+    }
+    & .owl-theme .owl-nav{
+        margin-top: 0;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0;
+        & .customNextBtn{
+            width: 40px;
+            height: 75px;
+            background: url('../image/nft/left.png') center/cover;
+            cursor: pointer;
+        }
+        & .customPrevBtn{
+            width: 40px;
+            height: 75px;
+            background: url('../image/nft/right.png') center/cover;
+            cursor: pointer;
+        }
+    }
+    &__title{
+        font-family: 'Jost*';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 43px;
+        line-height: 62px;
+        
+        background: linear-gradient(180deg, #D2D8DE 0%, #FEFFFF 23.96%, #C0C3C6 50.52%, #B6BBBF 79.69%, #ACB2B7 98.44%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 27px;
+        text-align: center;
+    }
+    &__subtitle{
+        font-family: 'Jost*';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        text-align: center;
+        
+        color: #FFFFFF;
+        margin-bottom: 50px;
+    }
+    
+}

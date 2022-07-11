@@ -1,0 +1,52 @@
+.token {
+    padding: 140px 0 170px;
+    margin-top: -130px;
+    margin-bottom: -157px;
+    z-index: 1;
+    position: relative;
+    background: url("../image/token/bg4.png") center/cover no-repeat,;
+    &-left {
+        &__text {
+            font-family: "Jost";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 26px;
+
+            color: #ffffff;
+        }
+        &-star {
+            display: flex;
+            &__img {
+                margin-right: 20px;
+            }
+        }
+        &__title {
+            font-family: "Jost";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 43px;
+            line-height: 62px;
+            text-transform: uppercase;
+
+            background: linear-gradient(
+                180deg,
+                #d2d8de 0%,
+                #feffff 23.96%,
+                #c0c3c6 50.52%,
+                #b6bbbf 79.69%,
+                #acb2b7 98.44%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 28px;
+            text-align: center;
+        }
+        &__img {
+            margin-bottom: 46px;
+            text-align: center;
+        }
+        
+    }
+}

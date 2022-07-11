@@ -1,0 +1,123 @@
+.test {
+    & li {
+        list-style-type: none;
+        max-width: 260px;
+        max-height: 260px;
+    }
+    & .box1 {
+        @include box;
+        margin-top: 48px;
+        padding-top: 10px;
+    }
+    & .box2 {
+        @include box;
+        margin-top: -102px;
+        margin-left: 50px;
+    }
+    & .box3 {
+        @include box;
+    }
+    & .box4 {
+        @include box;
+        margin-top: -102px;
+    }
+    & .box5 {
+        @include box;
+        margin-top: -5px;
+    }
+    & .text2 {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 23px;
+
+        color: rgba(255, 255, 255, 0.8);
+    }
+    & .title1 {
+        @include title;
+        margin-right: 50px;
+        margin-top: -30px;
+    }
+    & .title2 {
+        @include title;
+        margin-right: 70px;
+        margin-bottom: 20px;
+    }
+    & .title3 {
+        @include title;
+        margin-right: 50px;
+        margin-bottom: 42px;
+    }
+    & .title4 {
+        @include title;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    & .title5 {
+        @include title;
+        margin-right: 50px;
+        margin-bottom: 20px;
+    }
+}
+.roadmap {
+    background: url("../image/roadmap/bg.png") center/cover;
+    position: relative;
+    padding: 40px 0 150px;
+    & .line {
+        position: absolute;
+        background: gray;
+        top: 50%;
+        width: 100%;
+        height: 3px;
+        &::before{
+            content: '';
+            position: absolute;
+            background: yellow;
+            top: 0;
+            left: 0;
+            width: 32%;
+            height: 3px;
+        }
+    }
+    &__text {
+        font-family: "Jost";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 43px;
+        line-height: 62px;
+        text-transform: uppercase;
+
+        background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 150px;
+        display: flex;
+        justify-content: center;
+    }
+    &__img {
+        display: inline-block;
+        margin-bottom: -200px;
+    }
+    &__img1 {
+        margin-left: 50px;
+        margin-bottom: 30px;
+    }
+    &__img2 {
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    &__img3 {
+        margin-left: 60px;
+        margin-bottom: 30px;
+    }
+    &__img4 {
+        margin-left: 70px;
+        margin-top: 30px;
+    }
+    &__img5 {
+        margin-left: 70px;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,49 @@
+.partner {
+  background: url("../image/footer/bg.png") center/cover;
+  padding: 140px 0 75px;
+}
+.partner__title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 62px;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2d8de), color-stop(23.96%, #feffff), color-stop(50.52%, #c0c3c6), color-stop(79.69%, #b6bbbf), color-stop(98.44%, #acb2b7));
+  background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.partner__img {
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.partner__img:last-child {
+  margin-right: 0;
+}
+.partner-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 32px;
+}
+.partner-box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 160px;
+}

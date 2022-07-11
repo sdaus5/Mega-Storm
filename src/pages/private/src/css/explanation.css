@@ -1,0 +1,43 @@
+.explanation {
+  padding: 105px 0 256px;
+  height: 836px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -150px;
+  background: url("../image/explanation/l.png") left top/60% no-repeat, url("../image/explanation/r.png") right top/55% no-repeat;
+}
+.explanation__title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 43px;
+  line-height: 62px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2d8de), color-stop(23.96%, #feffff), color-stop(50.52%, #c0c3c6), color-stop(79.69%, #b6bbbf), color-stop(98.44%, #acb2b7));
+  background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.explanation__subtitle {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 71.6667px;
+  line-height: 104px;
+  /* identical to box height */
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2d8de), color-stop(23.96%, #feffff), color-stop(50.52%, #c0c3c6), color-stop(79.69%, #b6bbbf), color-stop(98.44%, #acb2b7));
+  background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 35px;
+}
+.explanation__text {
+  max-width: 600px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 26px;
+  color: #ffffff;
+}

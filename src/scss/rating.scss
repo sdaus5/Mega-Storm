@@ -1,0 +1,53 @@
+.rating{
+    background: url('../image/rating/bg.png') center/cover;
+    position: relative;
+    padding: 15px 0 240px;
+    margin-bottom: -200px;
+    &-block{
+        display: flex;
+        justify-content: space-between;
+        &__box{
+        text-align: center;
+        }
+        &__subtitle{
+            font-family: 'Jost*';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 196.5%;
+            /* identical to box height, or 59px */
+            
+            text-transform: uppercase;
+            
+            background: linear-gradient(180deg, #FFA12A 0%, #FEEF6D 100%), rgba(255, 255, 255, 0.68);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: -20px;
+            margin-bottom: 40px;
+        }
+    }
+    &-video{
+        max-width: 1030px;
+        height: 580px;
+        background: url('../image/rating/video.png') center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &__link{
+            text-decoration: none;
+        }
+        &__img1{
+            margin-right: -80px;
+            margin-bottom: -25px;
+        }
+    }
+}
+.fa-youtube{
+    width: 120px;
+    height: 87px;
+    color: red;
+}
+.fancybox__iframe{
+    position: absolute;
+}

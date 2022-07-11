@@ -1,0 +1,47 @@
+@mixin conceptlink {
+    font-family: "Jost*";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22.2603px;
+    line-height: 32px;
+    /* identical to box height */
+
+    color: #774200;
+    text-decoration: none;
+    border: 1px black;
+    padding: 16px 100px;
+    margin-right: 45px;
+    &:last-child{
+        margin-right: 0;
+    }
+}
+@mixin box{
+    position: relative;
+    &:nth-child(odd) {
+        bottom: -100px;
+    }
+    &:nth-child(even) {
+        bottom: 0px;
+    }
+}
+@mixin title {
+    font-family: "Jost";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 29px;
+        /* identical to box height */
+
+        text-align: center;
+        text-transform: uppercase;
+
+        background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%),
+            #ffffff;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;
+}
+
+    
+

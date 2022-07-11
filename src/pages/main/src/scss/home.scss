@@ -1,0 +1,64 @@
+.home {
+    background: url("../image/home/bg2.png") center/cover;
+    padding: 232px 0 284px;
+    position: relative;
+    margin-bottom: -100px;
+    &-left {
+        display: flex;
+        &__logo {
+            margin-bottom: 50px;
+        }
+        &__btn {
+            padding: 16px 60px;
+            font-family: "Jost";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22.2603px;
+            line-height: 32px;
+            /* identical to box height */
+
+            text-transform: uppercase;
+
+            color: #c4c4c4;
+            border: 1.78082px solid #c4c4c4;
+            background:black ;
+            box-sizing: border-box;
+            border-radius: 7.15189px;
+            cursor: pointer;
+            transition: 0.5s all;
+            &:hover {
+                background: #be460d;
+                color: #774200;
+            }
+            &:active{
+                background: #be460d;
+                color: #774200;
+            }
+        }
+        &__img {
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+            width: 33px;
+            height: 33px;
+            object-fit: cover;
+            & img{
+                width: 100%;
+            }
+        }
+        &__text {
+            font-family: "Jost";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 27.8383px;
+            line-height: 196.5%;
+            /* or 55px */
+
+            text-transform: uppercase;
+
+            color: rgba(255, 255, 255, 0.68);
+            margin-bottom: 50px;
+            margin-top: -10px;
+        }
+    }
+}

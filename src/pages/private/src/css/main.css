@@ -1,0 +1,1314 @@
+@import url("../libs/bootstrap/bootstrap-grid.min.css");
+@import url("../font/jost/stylesheet.css");
+@import url("../libs/owl/owl.carousel.min.css");
+@import url("../libs/owl/owl.theme.default.min.css");
+@import url("../font/jost/jost.css");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.body {
+  background: black;
+  font-family: "Jost";
+}
+
+.header {
+  background: url("../image/header/bg.png") center no-repeat;
+  padding: 21px 0;
+}
+.header__img {
+  padding-right: 79px;
+}
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header-nav__box {
+  width: 295px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 89px;
+}
+.header__link {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height */
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 40px;
+  position: relative;
+}
+.header__link:hover {
+  color: white;
+}
+.header__link:hover::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 20px);
+  height: 2px;
+  background: white;
+  left: -10px;
+  bottom: -16px;
+}
+.header-con {
+  margin-right: 66px;
+}
+.header-con__link {
+  border-radius: 5px;
+  border: 1px black;
+  padding: 14px 12px;
+  text-decoration: none;
+  margin-right: 25px;
+  line-height: 45px;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+}
+.header-con__link:last-child {
+  margin-right: 66px;
+  padding-left: 15px;
+  margin-right: 15px;
+}
+.header-con__link:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#111110), to(#111110));
+  background: linear-gradient(0deg, #111110, #111110);
+}
+.header-con__m:hover {
+  color: gray;
+}
+.header__linkBtn {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height */
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  padding: 9px 21px;
+  margin-right: 23px;
+}
+.header__linkBtn:hover {
+  background: #935243;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+.header__linkbtn {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height */
+  color: #ffffff;
+  text-decoration: none;
+  border: 2px solid #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  padding: 9px 21px;
+}
+.header__linkbtn:hover {
+  background: #935243;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+
+.fa-telegram {
+  font-size: 20px;
+  color: white;
+}
+.fa-telegram:hover {
+  color: #6a6afd;
+}
+
+.fa-twitter {
+  color: white;
+  font-size: 20px;
+}
+.fa-twitter:hover {
+  color: #6a6afd;
+}
+
+.fa-play {
+  font-size: 20px;
+  color: white;
+}
+.fa-play:hover {
+  color: #6a6afd;
+}
+
+.rating {
+  background: url("../image/rating/bg.png") center/cover;
+  position: relative;
+  padding: 15px 0 240px;
+  margin-bottom: -200px;
+}
+.rating-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.rating-block__box {
+  text-align: center;
+}
+.rating-block__subtitle {
+  font-family: "Jost*";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 196.5%;
+  /* identical to box height, or 59px */
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFA12A), to(#FEEF6D)), rgba(255, 255, 255, 0.68);
+  background: linear-gradient(180deg, #FFA12A 0%, #FEEF6D 100%), rgba(255, 255, 255, 0.68);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin: -20px;
+  margin-bottom: 40px;
+}
+.rating-video {
+  max-width: 1030px;
+  height: 580px;
+  background: url("../image/rating/video.png") center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.rating-video__link {
+  text-decoration: none;
+}
+.rating-video__img1 {
+  margin-right: -80px;
+  margin-bottom: -25px;
+}
+
+.fa-youtube {
+  width: 120px;
+  height: 87px;
+  color: red;
+}
+
+.fancybox__iframe {
+  position: absolute;
+}
+
+.nft {
+  background: url("../image/nft/bg.png") center/cover;
+  padding: 140px 0 160px;
+}
+.nft .owl-theme .owl-dots .owl-dot.active span, .nft .owl-theme .owl-dots .owl-dot:hover span {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFA12A), to(#FEEF6D)), #FEFE40;
+  background: linear-gradient(180deg, #FFA12A 0%, #FEEF6D 100%), #FEFE40;
+}
+.nft .owl-theme .owl-nav {
+  margin-top: 0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 0;
+}
+.nft .owl-theme .owl-nav .customNextBtn {
+  width: 40px;
+  height: 75px;
+  background: url("../image/nft/left.png") center/cover;
+  cursor: pointer;
+}
+.nft .owl-theme .owl-nav .customPrevBtn {
+  width: 40px;
+  height: 75px;
+  background: url("../image/nft/right.png") center/cover;
+  cursor: pointer;
+}
+.nft__title {
+  font-family: "Jost*";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 62px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#D2D8DE), color-stop(23.96%, #FEFFFF), color-stop(50.52%, #C0C3C6), color-stop(79.69%, #B6BBBF), color-stop(98.44%, #ACB2B7));
+  background: linear-gradient(180deg, #D2D8DE 0%, #FEFFFF 23.96%, #C0C3C6 50.52%, #B6BBBF 79.69%, #ACB2B7 98.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 27px;
+  text-align: center;
+}
+.nft__subtitle {
+  font-family: "Jost*";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+.concept {
+  background: url("../image/concept/bg.png") center/cover;
+  padding: 160px 0 125px;
+}
+.concept__title {
+  font-family: "Jost*";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 62px;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2d8de), color-stop(23.96%, #feffff), color-stop(50.52%, #c0c3c6), color-stop(79.69%, #b6bbbf), color-stop(98.44%, #acb2b7));
+  background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.concept__text {
+  font-family: "Jost*";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+.concept__link {
+  font-family: "Jost*";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22.2603px;
+  line-height: 32px;
+  /* identical to box height */
+  color: #774200;
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 16px 50px;
+  margin-right: 45px;
+  border-radius: 5px;
+}
+.concept__link:last-child {
+  margin-right: 0;
+}
+.concept__link:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FFA12A), to(#FEEF6D));
+  background: linear-gradient(180deg, #FFA12A 0%, #FEEF6D 100%);
+  border: 1.78082px solid #FFF61B;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 7.15189px;
+}
+.concept__img1 {
+  margin-bottom: 40px;
+  margin-left: 63px;
+}
+.concept__img2 {
+  margin-left: 63px;
+}
+
+.token {
+  padding: 140px 0 170px;
+  margin-top: -130px;
+  margin-bottom: -157px;
+  z-index: 1;
+  position: relative;
+  background: url("../image/token/bg4.png") center/cover no-repeat;
+}
+.token-left__text {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #ffffff;
+}
+.token-left-star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.token-left-star__img {
+  margin-right: 20px;
+}
+.token-left__title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 62px;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2d8de), color-stop(23.96%, #feffff), color-stop(50.52%, #c0c3c6), color-stop(79.69%, #b6bbbf), color-stop(98.44%, #acb2b7));
+  background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 28px;
+  text-align: center;
+}
+.token-left__img {
+  margin-bottom: 46px;
+  text-align: center;
+}
+
+.test li {
+  list-style-type: none;
+  max-width: 260px;
+  max-height: 260px;
+}
+.test .box1 {
+  position: relative;
+  margin-top: 48px;
+  padding-top: 10px;
+}
+.test .box1:nth-child(odd) {
+  bottom: -100px;
+}
+.test .box1:nth-child(even) {
+  bottom: 0px;
+}
+.test .box2 {
+  position: relative;
+  margin-top: -102px;
+  margin-left: 50px;
+}
+.test .box2:nth-child(odd) {
+  bottom: -100px;
+}
+.test .box2:nth-child(even) {
+  bottom: 0px;
+}
+.test .box3 {
+  position: relative;
+}
+.test .box3:nth-child(odd) {
+  bottom: -100px;
+}
+.test .box3:nth-child(even) {
+  bottom: 0px;
+}
+.test .box4 {
+  position: relative;
+  margin-top: -102px;
+}
+.test .box4:nth-child(odd) {
+  bottom: -100px;
+}
+.test .box4:nth-child(even) {
+  bottom: 0px;
+}
+.test .box5 {
+  position: relative;
+  margin-top: -5px;
+}
+.test .box5:nth-child(odd) {
+  bottom: -100px;
+}
+.test .box5:nth-child(even) {
+  bottom: 0px;
+}
+.test .text2 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.test .title1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2d8de), color-stop(23.96%, #feffff), color-stop(50.52%, #c0c3c6), color-stop(79.69%, #b6bbbf), color-stop(98.44%, #acb2b7)), #ffffff;
+  background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%), #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-right: 50px;
+  margin-top: -30px;
+}
+.test .title2 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2d8de), color-stop(23.96%, #feffff), color-stop(50.52%, #c0c3c6), color-stop(79.69%, #b6bbbf), color-stop(98.44%, #acb2b7)), #ffffff;
+  background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%), #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-right: 70px;
+  margin-bottom: 20px;
+}
+.test .title3 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2d8de), color-stop(23.96%, #feffff), color-stop(50.52%, #c0c3c6), color-stop(79.69%, #b6bbbf), color-stop(98.44%, #acb2b7)), #ffffff;
+  background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%), #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-right: 50px;
+  margin-bottom: 42px;
+}
+.test .title4 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2d8de), color-stop(23.96%, #feffff), color-stop(50.52%, #c0c3c6), color-stop(79.69%, #b6bbbf), color-stop(98.44%, #acb2b7)), #ffffff;
+  background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%), #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.test .title5 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+  text-align: center;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2d8de), color-stop(23.96%, #feffff), color-stop(50.52%, #c0c3c6), color-stop(79.69%, #b6bbbf), color-stop(98.44%, #acb2b7)), #ffffff;
+  background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%), #ffffff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+.roadmap {
+  background: url("../image/roadmap/bg.png") center/cover;
+  position: relative;
+  padding: 40px 0 150px;
+}
+.roadmap .line {
+  position: absolute;
+  background: gray;
+  top: 50%;
+  width: 100%;
+  height: 3px;
+}
+.roadmap .line::before {
+  content: "";
+  position: absolute;
+  background: yellow;
+  top: 0;
+  left: 0;
+  width: 32%;
+  height: 3px;
+}
+.roadmap__text {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 62px;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2d8de), color-stop(23.96%, #feffff), color-stop(50.52%, #c0c3c6), color-stop(79.69%, #b6bbbf), color-stop(98.44%, #acb2b7));
+  background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.roadmap__img {
+  display: inline-block;
+  margin-bottom: -200px;
+}
+.roadmap__img1 {
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+.roadmap__img2 {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.roadmap__img3 {
+  margin-left: 60px;
+  margin-bottom: 30px;
+}
+.roadmap__img4 {
+  margin-left: 70px;
+  margin-top: 30px;
+}
+.roadmap__img5 {
+  margin-left: 70px;
+  margin-bottom: 30px;
+}
+
+.team {
+  position: relative;
+  padding: 100px 0 15px;
+  background: url("../image/team/bg.png") center/cover;
+}
+.team__title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 62px;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#D2D8DE), color-stop(23.96%, #FEFFFF), color-stop(50.52%, #C0C3C6), color-stop(79.69%, #B6BBBF), color-stop(98.44%, #ACB2B7));
+  background: linear-gradient(180deg, #D2D8DE 0%, #FEFFFF 23.96%, #C0C3C6 50.52%, #B6BBBF 79.69%, #ACB2B7 98.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.team__subtitle {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 60px;
+}
+.team-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.team-img__logo {
+  margin: 60px;
+}
+.team-img2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.gun {
+  background: black;
+  position: relative;
+  padding: 0 0 120px;
+  /* Styling Pagination*/
+}
+.gun__title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 62px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2d8de), color-stop(23.96%, #feffff), color-stop(50.52%, #c0c3c6), color-stop(79.69%, #b6bbbf), color-stop(98.44%, #acb2b7));
+  background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 64px;
+  text-align: center;
+}
+.gun-slider {
+  width: 1169px;
+  margin: 0 auto;
+  padding: 20px 65px;
+  border-radius: 25px 100px 25px 25px;
+  background: linear-gradient(266.96deg, rgba(196, 196, 196, 0.05) 36.8%, rgba(196, 196, 196, 0) 94.84%);
+  border: 3px solid #6625d6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 40px rgba(80, 31, 164, 0.13), 0px 4px 4px rgba(0, 0, 0, 0.59);
+          box-shadow: 0px 4px 40px rgba(80, 31, 164, 0.13), 0px 4px 4px rgba(0, 0, 0, 0.59);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.gun .owl-theme .owl-nav {
+  margin-top: 0;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 0;
+}
+.gun .owl-theme .owl-nav .NextBtn {
+  width: 40px;
+  height: 75px;
+  background: url("../image/gun/l.png") center/cover;
+  cursor: pointer;
+  margin-left: -140px;
+}
+.gun .owl-theme .owl-nav .PrevBtn {
+  width: 40px;
+  height: 75px;
+  background: url("../image/gun/r.png") center/cover;
+  cursor: pointer;
+  margin-right: -140px;
+}
+.gun .owl-item {
+  width: 728px;
+  height: 338px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gun .owl-item img {
+  width: 100%;
+}
+.gun #owl-demo {
+  position: relative;
+}
+.gun .owl-dots {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  bottom: -160px;
+  left: -65px;
+  z-index: 2;
+}
+.gun .owl-dot {
+  display: block;
+  margin-right: 10px;
+  border: 2px solid #444;
+  padding: 3px;
+  zoom: 2;
+  width: 100px;
+  height: 80px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  top: 50%;
+  background: rgba(196, 196, 196, 0.04);
+  border: 3px solid #6625d6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 40px rgba(80, 31, 164, 0.13), 0px 4px 4px rgba(0, 0, 0, 0.59);
+          box-shadow: 0px 4px 40px rgba(80, 31, 164, 0.13), 0px 4px 4px rgba(0, 0, 0, 0.59);
+  border-radius: 10px;
+  margin-right: 33px;
+}
+.gun .owl-dot img {
+  width: 100%;
+}
+.gun .owl-dot.active {
+  border: 2px solid #f80000;
+}
+.gun .link-navi {
+  color: inherit;
+  text-decoration: none;
+}
+
+.home {
+  background: url("../image/home/bg2.png") center/cover;
+  padding: 232px 0 284px;
+  position: relative;
+  margin-bottom: -100px;
+}
+.home-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.home-left__logo {
+  margin-bottom: 50px;
+}
+.home-left__btn {
+  padding: 16px 60px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22.2603px;
+  line-height: 32px;
+  /* identical to box height */
+  text-transform: uppercase;
+  color: #c4c4c4;
+  border: 1.78082px solid #c4c4c4;
+  background: black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 7.15189px;
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.home-left__btn:hover {
+  background: #be460d;
+  color: #774200;
+}
+.home-left__btn:active {
+  background: #be460d;
+  color: #774200;
+}
+.home-left__img {
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 33px;
+  height: 33px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.home-left__img img {
+  width: 100%;
+}
+.home-left__text {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 27.8383px;
+  line-height: 196.5%;
+  /* or 55px */
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.68);
+  margin-bottom: 50px;
+  margin-top: -10px;
+}
+
+.explanation {
+  padding: 105px 0 256px;
+  height: 836px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: -350px;
+  background: url("../image/explanation/l.png") left top/60% no-repeat, url("../image/explanation/r.png") right top/55% no-repeat;
+}
+.explanation__title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 43px;
+  line-height: 62px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2d8de), color-stop(23.96%, #feffff), color-stop(50.52%, #c0c3c6), color-stop(79.69%, #b6bbbf), color-stop(98.44%, #acb2b7));
+  background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.explanation__subtitle {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 71.6667px;
+  line-height: 104px;
+  /* identical to box height */
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2d8de), color-stop(23.96%, #feffff), color-stop(50.52%, #c0c3c6), color-stop(79.69%, #b6bbbf), color-stop(98.44%, #acb2b7));
+  background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 35px;
+}
+.explanation__text {
+  max-width: 600px;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 26px;
+  color: #ffffff;
+}
+
+.meta {
+  background: url("../image/video/bg.png") center/cover;
+  position: relative;
+  padding: 70px 0 140px;
+}
+.meta__title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 62px;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#D2D8DE), color-stop(23.96%, #FEFFFF), color-stop(50.52%, #C0C3C6), color-stop(79.69%, #B6BBBF), color-stop(98.44%, #ACB2B7));
+  background: linear-gradient(180deg, #D2D8DE 0%, #FEFFFF 23.96%, #C0C3C6 50.52%, #B6BBBF 79.69%, #ACB2B7 98.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+  margin-bottom: 21px;
+}
+.meta__subtitle {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 100px;
+}
+.meta-video {
+  margin-left: 20px;
+  max-width: 1030px;
+  height: 580px;
+  background: url("../image/video/video-img.png") center/cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.meta-video__link {
+  text-decoration: none;
+}
+.meta-video__img1 {
+  margin-right: -80px;
+  margin-bottom: -25px;
+}
+
+.footer {
+  background: black;
+  padding: 140px 0 75px;
+}
+.footer__title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 62px;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2d8de), color-stop(23.96%, #feffff), color-stop(50.52%, #c0c3c6), color-stop(79.69%, #b6bbbf), color-stop(98.44%, #acb2b7));
+  background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 70px;
+  text-align: center;
+}
+.footer__img {
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.footer__img:last-child {
+  margin-right: 0;
+}
+.footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 32px;
+}
+.footer-box2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 160px;
+}
+.footer-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: 25px;
+}
+.footer-end__text1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height */
+  text-align: center;
+  color: #ffffff;
+}
+.footer-end__text2 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height */
+  text-align: center;
+  color: #ffffff;
+  margin-right: -30px;
+}
+.footer-end__link {
+  border-radius: 5px;
+  border: 1px black;
+  padding: 14px 12px;
+  text-decoration: none;
+  margin-right: 25px;
+  line-height: 45px;
+  text-align: center;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  background: black;
+  color: white;
+}
+.footer-end__link:last-child {
+  margin-right: 0px;
+}
+.footer-end__link:hover {
+  color: #3c3cec;
+}
+.footer-colon1__text:first-child {
+  margin-bottom: 0;
+}
+
+.private {
+  background: url("../image/private/bg.png") center/cover;
+  padding: 60px 0 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.private__title {
+  font-family: "Jost*";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 43px;
+  line-height: 62px;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2d8de), color-stop(23.96%, #feffff), color-stop(50.52%, #c0c3c6), color-stop(79.69%, #b6bbbf), color-stop(98.44%, #acb2b7));
+  background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.private__rank {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: -60px;
+}
+.private-sale {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 80px;
+}
+.private-sale__logo {
+  margin-right: 27px;
+}
+.private-sale1 {
+  margin-bottom: 60px;
+}
+.private-sale0 {
+  width: 1171px;
+  height: 473px;
+  background: rgba(0, 0, 0, 0.48);
+  border: 3px solid #ff592c;
+  -webkit-box-shadow: 0px 4px 40px rgba(255, 61, 22, 0.3), 0px 4px 4px rgba(0, 0, 0, 0.59);
+          box-shadow: 0px 4px 40px rgba(255, 61, 22, 0.3), 0px 4px 4px rgba(0, 0, 0, 0.59);
+  border-radius: 25px;
+  padding: 103px 0 137px 67px;
+  background-image: url("../image/private/solid.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  margin-bottom: 117px;
+}
+.private-sale3__img {
+  margin-right: 40px;
+}
+.private-sale2__title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 55px;
+  /* identical to box height */
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2d8de), color-stop(23.96%, #feffff), color-stop(50.52%, #c0c3c6), color-stop(79.69%, #b6bbbf), color-stop(98.44%, #acb2b7));
+  background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 4px;
+}
+.private-sale2__text {
+  font-family: "Jost*";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  /* identical to box height */
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2d8de), color-stop(23.96%, #feffff), color-stop(50.52%, #c0c3c6), color-stop(79.69%, #b6bbbf), color-stop(98.44%, #acb2b7));
+  background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.private-colon__maps {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+.private-colon__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.private-colon__text2 {
+  font-family: "Jost*";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: gray;
+  margin-bottom: 27px;
+}
+.private-colon__zag {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.private-colon__price {
+  font-family: "Jost*";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height */
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffa12a), to(#feef6d)), -webkit-gradient(linear, left top, left bottom, from(#d2d8de), color-stop(23.96%, #feffff), color-stop(50.52%, #c0c3c6), color-stop(79.69%, #b6bbbf), color-stop(98.44%, #acb2b7));
+  background: linear-gradient(180deg, #ffa12a 0%, #feef6d 100%), linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.private-colon__btn {
+  padding: 17px 115px;
+  background: #ffec5c url("../image/private/bgbtn.png") center/cover;
+  border-radius: 10px;
+  border: none;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  /* identical to box height */
+  color: #774200;
+}
+.private-colon__input {
+  background: rgba(0, 0, 0, 0.46);
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  padding: 17px 65px 20px 29px;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+.private-colon__title {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 46px;
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#d2d8de), color-stop(23.96%, #feffff), color-stop(50.52%, #c0c3c6), color-stop(79.69%, #b6bbbf), color-stop(98.44%, #acb2b7));
+  background: linear-gradient(180deg, #d2d8de 0%, #feffff 23.96%, #c0c3c6 50.52%, #b6bbbf 79.69%, #acb2b7 98.44%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-align: center;
+}
+.private-colon__text {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 42px;
+  text-align: center;
+}
+.private-colon__text1 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ffffff;
+}
+.private-colon__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.private-colon__block1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 42px;
+}
+.private-colon__block2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 42px;
+}
+.private-colon__block3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 42px;
+}
+.private-colon1 {
+  border: 3px solid #d3d1d1;
+  padding: 70px 66px 46px 46px;
+  border-radius: 25px;
+}
+.private-colon2 {
+  background: rgba(196, 196, 196, 0.04);
+  border: 3px solid #6625d6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 40px rgba(80, 31, 164, 0.13), 0px 4px 4px rgba(0, 0, 0, 0.59);
+          box-shadow: 0px 4px 40px rgba(80, 31, 164, 0.13), 0px 4px 4px rgba(0, 0, 0, 0.59);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 25px;
+  padding: 70px 66px 46px 46px;
+}
+.private-colon3 {
+  padding: 70px 50px 46px 46px;
+  background: rgba(196, 196, 196, 0.04);
+  border: 3px solid #ffff3f;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 40px rgba(255, 255, 63, 0.13), 0px 4px 4px rgba(0, 0, 0, 0.59);
+          box-shadow: 0px 4px 40px rgba(255, 255, 63, 0.13), 0px 4px 4px rgba(0, 0, 0, 0.59);
+  border-radius: 25px;
+  max-width: 370px;
+}

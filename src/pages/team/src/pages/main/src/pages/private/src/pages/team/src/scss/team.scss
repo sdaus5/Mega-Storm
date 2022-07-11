@@ -1,0 +1,10 @@
+.team{
+    position: relative;
+    padding: 100px 0 15px;
+    background: url('../image/team/bg.png') center/cover;
+    &-img{
+        &__img{
+            display: none;
+        }
+    }
+}
